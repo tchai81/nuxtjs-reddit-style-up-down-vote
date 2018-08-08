@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md>
     <v-layout row wrap :key="item.id" v-for="(item, index) in list">
-      <v-flex xs6 sm6 >
+      <v-flex xs8 sm8 >
         <v-card>
           <v-card-title primary-title>
             <v-flex xs1>

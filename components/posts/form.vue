@@ -4,6 +4,7 @@
       <v-layout row wrap>
         <v-flex xs8>
           <v-text-field 
+            @keyup.enter="submit"
             label="Title"
             v-model="title" 
             type="text"></v-text-field>
