@@ -1,10 +1,17 @@
-# todo-list-nuxt
+# Reddit style upvote and downvote app
 
-> Nuxt.js project
+- Simple Reddit style upvote and downvote app crafted using nuxtjs (based on vuejs)
+- No database involve. Using vuex to implement the functionality.
+- Received a simple input => post title. Post body consists of dummy text.
+- Using Vuetify as UI framework
+
+# Live demo
+
+https://nuxtjs-reddit-style-up-down-vote-ngkpmfpxvx.now.sh
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
@@ -20,4 +27,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
