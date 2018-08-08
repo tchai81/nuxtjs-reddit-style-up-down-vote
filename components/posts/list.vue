@@ -34,11 +34,11 @@ export default {
   methods: {
     handleUpvote(index) {
       this.$store.commit('post/upvote', index)
-      this.$store.commit('post/getTop20')
+      this.$store.commit('post/sortByVoteCount')
     },
     handleDownvote(index) {
       this.$store.commit('post/downvote', index)
-      this.$store.commit('post/getTop20')
+      this.$store.commit('post/sortByVoteCount')
     }
   }
 }

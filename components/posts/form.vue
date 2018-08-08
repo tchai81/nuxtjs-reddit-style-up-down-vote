@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-md>
-    <form @submit.prevent="onSubmit">
+    <form @submit.prevent="submit">
       <v-layout row wrap>
         <v-flex xs8>
           <v-text-field 
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
@@ -28,7 +29,7 @@ export default {
     submit() {
       if (this.title) {
         this.$store.commit('post/add', this.title)
-        this.$store.commit('post/getTop20')
+        this.$store.commit('post/sortByVoteCount', this.title)
         this.title = ''
       }
     }
