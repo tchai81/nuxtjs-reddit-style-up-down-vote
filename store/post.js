@@ -1,5 +1,7 @@
 export const state = () => ({
-    list: []
+    list: [],
+    top20List: [],
+    maxItem: 20
 })
 
 export const mutations = {
@@ -19,10 +21,10 @@ export const mutations = {
         }
     },
     getTop20(state) {
-        state.list
+        state.top20List = state.list
             .sort((a, b) => {
                 return b.vote - a.vote
             })
-            .slice(0, 4)
+            .slice(0, state.maxItem)
     }
 }
