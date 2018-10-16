@@ -7,7 +7,7 @@
 
 # Live demo
 
-https://nuxtjs-reddit-style-up-down-vote-ngkpmfpxvx.now.sh
+https://nuxtjs-reddit-style-up-down-vote-iovqihazzq.now.sh
 
 ## Build Setup
 
